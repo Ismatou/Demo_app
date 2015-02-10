@@ -1,0 +1,2 @@
+module UserbarriesHelper
+end

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Userbarries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ismatbarry@yahoo.fr</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @userbarries.each do |userbarry| %>
+      <tr>
+        <td><%= userbarry.ismatbarry@yahoo.fr %></td>
+        <td><%= link_to 'Show', userbarry %></td>
+        <td><%= link_to 'Edit', edit_userbarry_path(userbarry) %></td>
+        <td><%= link_to 'Destroy', userbarry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Userbarry', new_userbarry_path %>

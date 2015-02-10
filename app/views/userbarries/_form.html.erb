@@ -1,0 +1,21 @@
+<%= form_for(@userbarry) do |f| %>
+  <% if @userbarry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@userbarry.errors.count, "error") %> prohibited this userbarry from being saved:</h2>
+
+      <ul>
+      <% @userbarry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ismatbarry@yahoo.fr %><br>
+    <%= f.text_field :ismatbarry@yahoo.fr %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
